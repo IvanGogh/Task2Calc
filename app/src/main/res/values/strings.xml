@@ -14,8 +14,6 @@
     <string name="key_minus">-</string>
     <string name="key_divide">/</string>
     <string name="key_multiply">*</string>
-    <string name="key_equal">=</string>
-    <string name="key_delete">C</string>
-    <string name="key_dot">.</string>
-    <string name="hint">Здесь будет результат</string>
+        <string name="key_dot">.</string>
+
 </resources>

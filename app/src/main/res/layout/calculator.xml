@@ -9,13 +9,16 @@
     <TextView
         android:id="@+id/result"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/key_2"
         android:gravity="center"
-        android:hint="@string/hint"
-        android:textSize="16sp"
+        android:background="@color/button"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_marginHorizontal="3dp"
         />
 
     <Button
@@ -27,7 +30,9 @@
         app:layout_constraintTop_toBottomOf="@+id/result"
         app:layout_constraintEnd_toStartOf="@+id/key_2"
         android:layout_marginHorizontal="3dp"
-        android:backgroundTint="@color/button"/>
+        android:backgroundTint="@color/button"
+        app:layout_constraintHorizontal_weight="1"
+        android:shadowRadius="@integer/material_motion_duration_short_1"/>
     <Button
         android:id="@+id/key_2"
         android:layout_width="0dp"
@@ -37,7 +42,8 @@
         app:layout_constraintTop_toBottomOf="@+id/result"
         app:layout_constraintEnd_toStartOf="@+id/key_3"
         android:layout_marginHorizontal="3dp"
-        android:backgroundTint="@color/button"/>
+        android:backgroundTint="@color/button"
+        app:layout_constraintHorizontal_weight="1"/>
     <Button
         android:id="@+id/key_3"
         android:layout_width="0dp"
@@ -47,7 +53,8 @@
         app:layout_constraintTop_toBottomOf="@+id/result"
         app:layout_constraintEnd_toStartOf="@+id/key_divide"
         android:layout_marginHorizontal="3dp"
-        android:backgroundTint="@color/button"/>
+        android:backgroundTint="@color/button"
+        app:layout_constraintHorizontal_weight="1"/>
 
     <Button
         android:id="@+id/key_divide"
@@ -58,7 +65,8 @@
         app:layout_constraintTop_toBottomOf="@+id/result"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="3dp"
-        android:backgroundTint="@color/button"/>
+        android:backgroundTint="@color/button"
+        app:layout_constraintHorizontal_weight="1"/>
 
     <Button
         android:id="@+id/key_4"
@@ -142,25 +150,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="3dp"
         android:backgroundTint="@color/button"/>
-    <Button
-        android:id="@+id/key_delete"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/key_delete"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/key_7"
-        app:layout_constraintEnd_toStartOf="@+id/key_0"
-        android:layout_marginHorizontal="3dp"
-        android:backgroundTint="@color/button"/>
+
     <Button
         android:id="@+id/key_0"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/key_0"
-        app:layout_constraintStart_toEndOf="@id/key_delete"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/key_8"
         app:layout_constraintEnd_toStartOf="@+id/key_dot"
         android:layout_marginHorizontal="3dp"
+        app:layout_constraintHorizontal_weight="2"
         android:backgroundTint="@color/button"/>
     <Button
         android:id="@+id/key_dot"
@@ -171,6 +171,7 @@
         app:layout_constraintTop_toBottomOf="@+id/key_9"
         app:layout_constraintEnd_toStartOf="@+id/key_minus"
         android:layout_marginHorizontal="3dp"
+        app:layout_constraintHorizontal_weight="1"
         android:backgroundTint="@color/button"/>
     <Button
         android:id="@+id/key_minus"
@@ -181,17 +182,9 @@
         app:layout_constraintTop_toBottomOf="@+id/key_plus"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginHorizontal="3dp"
+        app:layout_constraintHorizontal_weight="1"
         android:backgroundTint="@color/button"/>
-    <Button
-        android:id="@+id/key_equal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/key_equal"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/key_0"
 
-        android:backgroundTint="@color/button"
-       />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
